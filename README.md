@@ -54,5 +54,34 @@ Depth testing is enabled to ensure proper object overlap. The render loop clears
 -Troubleshooting-
 If textures appear black or missing, verify that the texture files are located in the correct directory and that filenames match exactly. If the scene appears unlit or too dark, review the lighting values defined in the scene lighting setup or adjust material shininess. If the display appears flat, confirm that perspective mode is active instead of orthographic projection.
 
--Academic Context-
-This project was completed as part of SNHU’s CS-330 course to demonstrate understanding of 3D transformations, camera systems, lighting models, and real-time rendering techniques. The implementation reflects progressive development over multiple assignments and iterative scene refinement.
+-Design Reflection-
+1. How I Approach Designing Software
+
+My approach to software design begins with defining the overall structure before writing detailed implementation code. For this project, I first broke the scene into logical components such as camera control, scene management, lighting, and object rendering. Separating responsibilities between the SceneManager and ViewManager helped keep the system organized and made it easier to expand the project over time.
+
+One new design skill I developed during this project was thinking in terms of spatial composition and visual hierarchy. Instead of focusing only on functionality, I had to consider object scale, relative positioning, lighting direction, and material contrast to create a believable scene. This required planning the scene layout and adjusting transformations iteratively to achieve visual balance.
+
+The design process I followed was incremental and modular. I began with a basic scene and camera, then progressively added objects, textures, materials, and lighting. Each feature was added in isolation and tested before moving forward. This approach reduced debugging complexity and allowed me to refine the scene without breaking existing functionality.
+
+These design tactics will apply directly to future projects. Breaking systems into manageable components, separating responsibilities, and designing incrementally are practices that improve maintainability and scalability in both graphics applications and general software development.
+
+2. How I Approach Developing Programs
+
+My development strategy for this project focused on small, testable changes with frequent iteration. Instead of implementing large features at once, I added one object or capability at a time, compiled and ran the program, and visually verified the results. This was especially important in a graphics environment where issues such as incorrect transforms, lighting errors, or texture problems are easier to diagnose when changes are isolated.
+
+New development strategies I used included:
+  Building objects using reusable transformation patterns
+  Testing lighting and material changes visually after each adjustment
+  Using console output and incremental rendering to confirm resource loading and initialization
+
+Iteration played a major role in the project. Many elements such as camera positioning, object scale, lighting intensity, and texture alignment required multiple adjustments before producing the desired result. Each milestone built on the previous one, gradually improving both functionality and visual quality.
+
+Over the course of the project, my approach evolved from simply making features work to refining structure and readability. I became more intentional about organizing rendering code, grouping related operations, and maintaining consistency in how objects were configured. This shift toward cleaner structure reflects a more disciplined development process that will carry forward into future coursework and professional work.
+
+3. How Computer Science Supports My Goals
+
+This project strengthened my understanding of how mathematical and computational concepts translate into real-time visual systems. Working with transformation matrices, camera projections, lighting models, and shader communication reinforced core concepts from linear algebra and system design.
+
+From an educational perspective, computational graphics has improved my ability to think in terms of coordinate systems, spatial reasoning, and performance-aware rendering. These skills support future coursework in areas such as simulation, visualization, and advanced software engineering.
+
+From a professional standpoint, this experience builds skills that extend beyond graphics. The project required modular architecture, resource management, debugging complex runtime behavior, and iterative refinement. These are directly applicable to my long-term goals in software development and technical fields such as cybersecurity and AI, where system structure, performance awareness, and disciplined development practices are critical.
